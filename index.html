@@ -5,41 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stas Tigay</title>
     <style>
-        a {
-            color: #ffe50c;
-        }
-
         body {
             font-family: serif;
-            background-image: url(background.jpeg);
+            background-image: url(assets/website_frontpage.jpg);
             background-repeat: no-repeat;
-            color: #ffe50c;
+            background-size: cover;
             background-color: #03110a;
-            height: 500px;
-        }
-
-        div {
+            color: #ffe50c;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 800px;
         }
 
-        .center {
-            width: 15%;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0 0 5px;
+        }
+
+        .links {
+            display: flex;
+            gap: 10px; /* Adds space between links */
+        }
+
+        a {
+            color: #ffe50c;
+            text-decoration: none;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <img src="Painting by Seong Ryul.jpg" alt="image" class="center">
+    <div class="container">
+        <img src="assets/Painting by Seong Ryul.jpg" alt="image">
         <h1>hellostas</h1>
-        <a href="about.html">About Me</a>
-        <a href="https://github.com/statsistics" target="_blank">Github</a>
-        <a href="https://www.instagram.com/helloostas/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/stastigay/" target="_blank">LinkedIn</a>
-        <a href="https://helloostas.itch.io/" target="_blank">Itch</a>
+        <div class="links">
+            <a href="about.html">About Me</a>
+            <a href="https://github.com/statsistics" target="_blank">Github</a>
+            <a href="https://www.instagram.com/helloostas/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/stastigay/" target="_blank">LinkedIn</a>
+            <a href="https://helloostas.itch.io/" target="_blank">Itch</a>
+        </div>
     </div>
-
 </body>
 </html>
